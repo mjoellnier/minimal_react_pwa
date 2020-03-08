@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/minimal_react_pwa/static/css/main.ab54b556.chunk.css",
+    "main.css": "/minimal_react_pwa/static/css/main.66253d8c.chunk.css",
     "main.js": "/minimal_react_pwa/static/js/main.263bab65.chunk.js",
     "main.js.map": "/minimal_react_pwa/static/js/main.263bab65.chunk.js.map",
     "runtime-main.js": "/minimal_react_pwa/static/js/runtime-main.c56ba5d1.js",
@@ -8,16 +8,16 @@
     "static/js/2.aa3d2a92.chunk.js": "/minimal_react_pwa/static/js/2.aa3d2a92.chunk.js",
     "static/js/2.aa3d2a92.chunk.js.map": "/minimal_react_pwa/static/js/2.aa3d2a92.chunk.js.map",
     "index.html": "/minimal_react_pwa/index.html",
-    "precache-manifest.c42306678a6d1f79dd73cc68a10812c0.js": "/minimal_react_pwa/precache-manifest.c42306678a6d1f79dd73cc68a10812c0.js",
+    "precache-manifest.b33cf4eace364be1c995db27ba8ae983.js": "/minimal_react_pwa/precache-manifest.b33cf4eace364be1c995db27ba8ae983.js",
     "service-worker.js": "/minimal_react_pwa/service-worker.js",
-    "static/css/main.ab54b556.chunk.css.map": "/minimal_react_pwa/static/css/main.ab54b556.chunk.css.map",
+    "static/css/main.66253d8c.chunk.css.map": "/minimal_react_pwa/static/css/main.66253d8c.chunk.css.map",
     "static/js/2.aa3d2a92.chunk.js.LICENSE.txt": "/minimal_react_pwa/static/js/2.aa3d2a92.chunk.js.LICENSE.txt",
     "static/media/background.png": "/minimal_react_pwa/static/media/background.dbbfcb88.png"
   },
   "entrypoints": [
     "static/js/runtime-main.c56ba5d1.js",
     "static/js/2.aa3d2a92.chunk.js",
-    "static/css/main.ab54b556.chunk.css",
+    "static/css/main.66253d8c.chunk.css",
     "static/js/main.263bab65.chunk.js"
   ]
 }

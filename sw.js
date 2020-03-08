@@ -25,19 +25,19 @@ workbox.core.clientsClaim();
 self.__precacheManifest = [
   {
     "url": "asset-manifest.json",
-    "revision": "f706e012a1fd2a31cc4bdc2f5e5205c7"
+    "revision": "c3d665d96f095cfc0e10432ad7ed7a30"
   },
   {
     "url": "index.html",
-    "revision": "c3862dd07455db54c7703b629bf34f4f"
+    "revision": "1ed7984a197babc9595df6e3783fb18b"
   },
   {
     "url": "manifest.json",
-    "revision": "3316d4715b982764fcc63ba2e0caf450"
+    "revision": "9f5218285de5e95e23067fcd85b11bd7"
   },
   {
-    "url": "static/css/main.ab54b556.chunk.css",
-    "revision": "b3d8e5edfb3a37c9a49c5fb19799f188"
+    "url": "static/css/main.66253d8c.chunk.css",
+    "revision": "9c9bb2ba3703ed141d1c38fc137b17de"
   },
   {
     "url": "static/js/2.aa3d2a92.chunk.js",
