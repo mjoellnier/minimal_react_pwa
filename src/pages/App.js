@@ -24,7 +24,11 @@ const App = () => {
       {loadedTodo ? (
         <p>
           Todo {loadedTodo.id} with the title <i>{loadedTodo.title}</i> was
-          fetched from the API!
+          fetched from the{" "}
+          <a href="https://jsonplaceholder.typicode.com/" target="_blank">
+            API
+          </a>
+          !
         </p>
       ) : (
         <p>Loading...</p>

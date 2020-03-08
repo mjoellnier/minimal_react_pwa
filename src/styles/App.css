@@ -16,3 +16,15 @@
   font-size: xx-large;
   text-align: center;
 }
+
+a {
+  text-decoration: none;
+  color: darkgreen;
+  font-weight: bold;
+  transition: all 500ms ease-in-out;
+}
+
+a:hover {
+  text-decoration: none;
+  color: green;
+}
