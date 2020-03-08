@@ -7,13 +7,35 @@ const App = () => {
   const [loadedTodo, setLoadedTodo] = useState();
 
   useEffect(() => {
-    let randomNumber = Math.floor(Math.random() * 10);
+    let randomNumber = Math.floor(Math.random() * 10) + 1;
     callTestApi(randomNumber).then(result => setLoadedTodo(result));
   }, []);
 
-  useEffect(() => {
-    console.log(loadedTodo);
-  }, [loadedTodo]);
+  const getResultText = () => {
+    if (loadedTodo) {
+      switch (loadedTodo.id) {
+        case -1:
+          return (
+            <p>
+              You're offline and tried to fetch the id {loadedTodo.number} which
+              was not prechached!
+            </p>
+          );
+        default:
+          return (
+            <p>
+              Todo {loadedTodo.id} with the title <i>{loadedTodo.title}</i> was
+              fetched from the{" "}
+              <a href="https://jsonplaceholder.typicode.com/" target="_blank">
+                API
+              </a>
+              !
+            </p>
+          );
+      }
+    }
+    return <p>Loading...</p>;
+  };
 
   return (
     <div
@@ -21,18 +43,7 @@ const App = () => {
       style={{ backgroundImage: `url(${BackgroundImage})` }}
     >
       <h2>Welcome to the minimal PWA example!</h2>
-      {loadedTodo ? (
-        <p>
-          Todo {loadedTodo.id} with the title <i>{loadedTodo.title}</i> was
-          fetched from the{" "}
-          <a href="https://jsonplaceholder.typicode.com/" target="_blank">
-            API
-          </a>
-          !
-        </p>
-      ) : (
-        <p>Loading...</p>
-      )}
+      {getResultText()}
     </div>
   );
 };
