@@ -18,6 +18,12 @@
   overflow-y: auto;
 }
 
+.socialBanner {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 5%;
+}
+
 p {
   margin: 0 15%;
 }

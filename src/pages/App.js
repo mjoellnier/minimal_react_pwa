@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
-import "../styles/App.css";
+import GitHubButton from "react-github-btn";
+import { TwitterFollowButton } from "react-twitter-embed";
 import BackgroundImage from "../assets/images/background.png";
+import "../styles/App.css";
 import { callTestApi } from "../utils/TestConnector";
 
 const App = () => {
@@ -38,13 +40,27 @@ const App = () => {
   };
 
   return (
-    <div
-      id="app-wrapper"
-      style={{ backgroundImage: `url(${BackgroundImage})` }}
-    >
-      <h2>Welcome to the minimal PWA example!</h2>
-      {getResultText()}
-    </div>
+    <>
+      <div className="socialBanner">
+        <TwitterFollowButton screenName={"coding_max"} />
+        <GitHubButton
+          href="https://github.com/mjoellnier"
+          data-color-scheme="no-preference: dark; light: dark; dark: dark;"
+          data-size="large"
+          aria-label="Follow @mjoellnier on GitHub"
+          style={{ float: "right" }}
+        >
+          Follow @mjoellnier
+        </GitHubButton>
+      </div>
+      <div
+        id="app-wrapper"
+        style={{ backgroundImage: `url(${BackgroundImage})` }}
+      >
+        <h2>Welcome to the minimal PWA example!</h2>
+        {getResultText()}
+      </div>
+    </>
   );
 };
 
