@@ -15,6 +15,11 @@
   font-family: Verdana;
   font-size: xx-large;
   text-align: center;
+  overflow-y: auto;
+}
+
+p {
+  margin: 0 15%;
 }
 
 a {

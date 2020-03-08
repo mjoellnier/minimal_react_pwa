@@ -6,6 +6,6 @@ The idea of this project is to create a playground for a minimal working PWA in 
 
 _This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app)._
 
-Background image: Photo by Fred Viljoen on Unsplash
+Background image: Photo by Donald Giannatti on Unsplash
 
 The Test-API is provided by: https://jsonplaceholder.typicode.com/
