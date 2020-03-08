@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Minimal PWA",
+  "name": "Minimal ReactJS PWA",
   "icons": [
     {
       "src": "logo192.png",
@@ -17,6 +17,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#8f2943",
+  "background_color": "#478bab"
 }
