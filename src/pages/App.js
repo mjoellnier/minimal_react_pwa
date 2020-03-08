@@ -8,14 +8,19 @@ import { callTestApi } from "../utils/TestConnector";
 const App = () => {
   const [loadedTodo, setLoadedTodo] = useState();
 
-  useEffect(() => {
+  const loadTodo = () => {
+    setLoadedTodo({ id: -2 });
     let randomNumber = Math.floor(Math.random() * 10) + 1;
     callTestApi(randomNumber).then(result => setLoadedTodo(result));
-  }, []);
+  };
+
+  useEffect(() => loadTodo(), []);
 
   const getResultText = () => {
     if (loadedTodo) {
       switch (loadedTodo.id) {
+        case -2:
+          return <div className="loader" />;
         case -1:
           return (
             <p>
@@ -26,9 +31,12 @@ const App = () => {
         default:
           return (
             <p>
-              Todo {loadedTodo.id} with the title <i>{loadedTodo.title}</i> was
-              fetched from the{" "}
-              <a href="https://jsonplaceholder.typicode.com/" target="_blank">
+              Todo {loadedTodo.id} was fetched from the{" "}
+              <a
+                href="https://jsonplaceholder.typicode.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 API
               </a>
               !
@@ -36,7 +44,7 @@ const App = () => {
           );
       }
     }
-    return <p>Loading...</p>;
+    return <div className="loader" />;
   };
 
   return (
@@ -57,8 +65,13 @@ const App = () => {
         id="app-wrapper"
         style={{ backgroundImage: `url(${BackgroundImage})` }}
       >
-        <h2>Welcome to the minimal PWA example!</h2>
         {getResultText()}
+        <input
+          id="todoButton"
+          onClick={loadTodo}
+          type="button"
+          value="Get Todo"
+        />
       </div>
     </>
   );
