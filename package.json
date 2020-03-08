@@ -12,8 +12,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "build-sw": "node ./src/sw-build.js",
+    "clean-cra-sw": "rm -f build/precache-manifest.*.js && rm -f build/service-worker.js",
+    "build": "react-scripts build && npm run build-sw && npm run clean-cra-sw",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
